@@ -7,5 +7,9 @@
 
 
 # Main
-echo I am working perfectly
-# End
+$a last
+function users(){
+    
+    echo $a
+};
+#End
