@@ -8,5 +8,18 @@
 
 # Main
 
+for d in doom
+do
+
+ps aux
+
+echo "Which PID do you want to kill?"
+
+read PID
+
+kill $PID
+done
+
+echo "All done."
 
 #End
