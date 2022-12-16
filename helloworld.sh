@@ -1,25 +1,19 @@
 #!/bin/bash
 
-# Script: Ops 201 Class 05 Ops Challenge Solution
+# Script: Ops 201 Class 06 Ops Challenge Solution
 # Author: Ashley Bryce
-# Date of latest revision: 12/13/22
+# Date of latest revision: 12/15/22
 # Purpose: Print a string to the terminal
 
 
 # Main
 
-for d in doom
-do
+if cat "hey.txt" 
+then echo "Already here..."
 
-ps aux
+else
+    touch "hey.txt"
+    echo "I'm alive!"
+    fi
 
-echo "Which PID do you want to kill?"
-
-read PID
-
-kill $PID
-done
-
-echo "All done."
-
-#End
+# End
