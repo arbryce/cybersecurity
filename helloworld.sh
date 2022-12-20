@@ -1,19 +1,45 @@
 #!/bin/bash
 
-# Script: Ops 201 Class 06 Ops Challenge Solution
+# Script: Ops 201 Class 07 Ops Challenge Solution
 # Author: Ashley Bryce
-# Date of latest revision: 12/15/22
+# Date of latest revision: 12/19/22
 # Purpose: Print a string to the terminal
 
 
 # Main
 
-if cat "hey.txt" 
-then echo "Already here..."
+echo "CPU"
+lshw -C cpu | grep -i product
+lshw -C cpu | grep -i vendor 
+lshw -C cpu | grep -i physical
+lshw -C cpu | grep -i bus
+lshw -C cpu | grep -i width
 
-else
-    touch "hey.txt"
-    echo "I'm alive!"
-    fi
+echo "RAM"
+lshw -C ram | grep -i description
+lshw -C ram | grep -i physical
+lshw -C ram | grep -i size
+
+echo "Display Adapter"
+lshw -C display | grep -i description
+lshw -C display | grep -i product
+lshw -C display | grep -i vendor
+lshw -C display | grep -i physical
+lshw -C display | grep -i bus
+lshw -C display | grep -i width
+lshw -C display | grep -i clock
+lshw -C display | grep -i capabilities
+lshw -C display | grep -i configuration
+
+echo "Network Adapter"
+lshw -C network | grep -i description
+lshw -C network | grep -i product
+lshw -C network | grep -i vendor
+lshw -C network | grep -i physical
+lshw -C network | grep -i bus
+lshw -C network | grep -i width
+lshw -C network | grep -i clock
+lshw -C network | grep -i capabilities
+lshw -C network | grep -i configuration
 
 # End
