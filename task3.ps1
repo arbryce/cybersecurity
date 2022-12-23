@@ -1,0 +1,1 @@
+Get-EventLog -LogName System -InstanceID 10016 > C:\Users\TJVog\Documents\InstanceID.txt

@@ -1,0 +1,1 @@
+Get-EventLog -LogName System -EntryType Error > C:\Users\TJVog\Documents\error.txt

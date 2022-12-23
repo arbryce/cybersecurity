@@ -1,0 +1,1 @@
+Get-EventLog -LogName System -Newest 20 > C:\Users\TJVog\Documents\New20.txt
