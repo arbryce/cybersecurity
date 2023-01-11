@@ -1,7 +1,7 @@
 # cybersecurity
 
-What is this repo all about?
-Why are you learning these skills?
+What is this repo all about? This repository contains all the coding skills and challenges learned through the Cybersecurity + Ops cohort with Savvy Coders.
+Why are you learning these skills? 
 What fundamental concepts did you learn in Ops 201?
 What was your favorite Ops Challenge assignment and why?
 How can these examples of shell scripting be applied to the workplace?
