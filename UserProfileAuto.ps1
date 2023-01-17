@@ -1,12 +1,12 @@
-Set-ExecutionPolicy "Unrestricted"
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 
 $username = "TestUser" 
 $fullName = "Test User" 
 $password = ConvertTo-SecureString "P@ssw0rd123" -AsPlainText -Force
-$Path = "C:\Users\TestUser"
-$logFile = "C:\Users\TestUser\log.csv"
+$path = "C:\Users\TestUser"
+$logFile = "$path\log.csv"
 
-Function New-Item -ItemType Directory -Path $Path
+Function New-Item -ItemType Directory -Path $path
 
 Function Write-Log {
   param(
