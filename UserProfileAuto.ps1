@@ -1,7 +1,13 @@
+Set-ExecutionPolicy "Unrestricted"
+
 $username = "TestUser" 
 $fullName = "Test User" 
 $password = ConvertTo-SecureString "P@ssw0rd123" -AsPlainText -Force
-$logFile = "C:\Users\log.csv"
+$Path = "C:\Users\TestUser"
+$logFile = "C:\Users\TestUser\log.csv"
+
+Function New-Item -ItemType Directory -Path $Path
+
 Function Write-Log {
   param(
       [Parameter(Mandatory = $true)][string] $message,
