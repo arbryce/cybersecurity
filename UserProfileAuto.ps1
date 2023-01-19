@@ -1,12 +1,12 @@
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 
-$username = "TestUser" 
-$fullName = "Test User" 
+$username = "NewUser" 
+$fullName = "New User" 
 $password = ConvertTo-SecureString "P@ssw0rd123" -AsPlainText -Force
-$path = "C:\Users\TestUser"
+$path = "C:\Users\NewUser"
 $logFile = "$path\log.csv"
 
-Function New-Item -ItemType Directory -Path $path
+New-Item -ItemType Directory -Path $path
 
 Function Write-Log {
   param(
@@ -20,19 +20,13 @@ Function Write-Log {
   # Append content to log file
   Add-Content -Path $logFile -Value "$timestamp [$level] - $message"
 }
-Function Create-LocalUser {
-    process {
-      try {
-        New-LocalUser "$username" -Password $password -FullName "$fullname" -Description "local user" -ErrorAction stop
+New-LocalUser "$username" -Password $password -FullName "$fullname" -Description "local user" -ErrorAction stop
         Write-Log -message "$username local user created"
         # Add new user to administrator group
         Add-LocalGroupMember -Group "Users" -Member "$username" -ErrorAction stop
         Write-Log -message "$username added to the local users group"
-      }catch{
         Write-log -message "Creating local account failed" -level "ERROR"
-      }
-    }    
-}
+
 # Enter the password
 Write-Host "Enter the password for the local user account" -ForegroundColor Cyan
 $password = Read-Host -AsSecureString
