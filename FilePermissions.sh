@@ -19,7 +19,7 @@ read PermNum
 
 chmod $PermNum $File
 
-echo "Permission has been granted to $FilePath."
+echo "Permission has been granted to $File."
 
 ls -l $File
 
