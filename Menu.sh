@@ -7,9 +7,9 @@
 
 # Main
 
-e=Y
+e=y
 
-while [ $e = Y ]
+while [ $e = y ]
 do
 echo "Please choose:"
 echo "1) Hello world!"
@@ -32,7 +32,7 @@ else [ $a = 4 ]
     exit
 fi
 
-echo "Do you want to try again, Y or N?"
+echo "Do you want to try again, y or n?"
 read e
 done
 
