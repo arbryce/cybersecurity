@@ -9,3 +9,13 @@
 
 # Main
 
+john = 3
+mary = 5
+adam = 6
+total = (john + mary + adam)
+
+print(john, mary, adam, sep=",")
+
+print (total)
+ 
+# End
