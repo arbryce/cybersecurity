@@ -3,7 +3,10 @@
 
 # Main
 
-for number in range(1,6):
-    print(number)
+import time
 
-print Ready or not, here I come!
+for i in range (1, 6):
+    time.sleep(1)
+    print(i, 'Mississipi')
+
+print ("Ready or not, here I come!")
