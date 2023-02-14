@@ -6,7 +6,7 @@ directions = ["left", "right", "forward", "backward"]
 # Introduction
 name = input("What is your name, adventurer?\n")
 print("Greetings, " + name + ". Prepare yourself for a magical journey!")
-print("You find yourself on the edge of a dark forest.")
+print("You find yourself on the edge of a dark forest...")
 print("Can you find your way through?\n")
  
 # Start of game
@@ -16,10 +16,10 @@ while response not in yes_no:
     if response == "yes":
         print("Ravens croak in the distance as you enter the forest.\n")
     elif response == "no":
-        print("Come back when you've got some chest hair. Goodbye, " + name + ".")
+        print("Come back when you've got some chest hair, " + name + ".")
         quit()
     else: 
-        print("Come again?\n")
+        print("Say what?\n")
  
 # Next part of game
 response = ""
@@ -43,7 +43,7 @@ while True:
         else: print("You ran away like a coward.")
         
     elif response == "right":
-        print("You head deeper into the forest.  You find a castle in front of you.\n")
+        print("You head deeper into the forest. You find a castle in front of you.\n")
         castle = input("You enter the castle do you go left or right?\n")
         if castle == "left":
             print("You fall through a trap door and find a troll. You find a bow and arrows next to you.")
@@ -67,7 +67,7 @@ while True:
             print("You scale the wall and find a dragon")
             dragon = input("Do you charm the dragon or run? c/r\n")
             if dragon == "c":
-                print("Your ride the dragon to safety")
+                print("You ride the dragon to safety")
                 quit()   
             else: print("The dragon catches you and eats you")
             quit()
@@ -91,7 +91,7 @@ while True:
                 print("You find tony stark stuck in cave building a suit and help him escape and you escape also")
             else: print("You find the true boogeyman John Wick and he kills all the creatures of the forest and you become ruler of the forest as he leaves to avenge the death of his dog")
     else:
-        print("I didn't understand that.\n")
+        print("Say what?\n")
     play_again = input("Play again? (y/n): ")
     if play_again.lower() != "y":
         break
