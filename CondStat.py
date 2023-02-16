@@ -10,20 +10,17 @@
 
 # Main
 
-a = input("Please enter a number: ")
-b = input("Please enter another number: ")
+a = input("Please enter a number for a: ")
+b = input("Please enter a number for b: ")
 
-if a or b != int :
-    print("Not a valid entry.")
-
-elif (a == b) :
-    print("Conditions met.")
+if (a == b) :
+    print("A and b are equal.")
 
 elif (a != b) :
     print("Does not equal.")
     if (a < b) :
-        print("Less than.")
+        print("A is less than.")
     elif (a > b) :
-        print("Greater than.")
+        print("A is greater than.")
 
 # End
