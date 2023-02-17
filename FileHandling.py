@@ -12,7 +12,7 @@ l3 = "Hi \n"
 f.writelines([l1, l2, l3])
 
 f = open("new.txt", "r")
-print(l1)
+print(f.readline())
 
 import os
 os.remove("new.txt")
