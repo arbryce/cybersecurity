@@ -11,9 +11,9 @@
 
 # Main
 
-a=C:/Users/TJVog/OneDrive/Desktop/Cybersecurity/cybersecurity/dir1/file.txt
-b=C:/Users/TJVog/OneDrive/Desktop/Cybersecurity/cybersecurity/dir2/file.txt
-c=C:/Users/TJVog/OneDrive/Desktop/Cybersecurity/cybersecurity/backup
+a=/home/ashley/cybersecurity/dir1/file.txt
+b=/home/ashley/cybersecurity/dir2/file.txt
+c=/home/ashley/Documents
 now=$(date "+%Y-%m-%d-%H-%M-%S")
 
 echo filesize1=$(stat -c %s $a) 
@@ -25,13 +25,6 @@ zip $b_$now.zip $b
 echo filesize3=$(stat -c %s $a_$now.zip)
 echo filesize4=$(stat -c %s $b_$now.zip)
 
-# End
-
-now=$(date "+%Y-%m-%d-%H-%M-%S")
-sysorg=$(stat -c %s /var/log/syslog)
-wtmporg=$(stat -c %s /var/log/wtmp)
-echo "Original Syslog file size:" $sysorg
-echo "Original WTMP file size:" $wtmporg
 zip /var/log/backup/wtmp_$now.zip /var/log/wtmp
 zip /var/log/backup/syslog_$now.zip /var/log/syslog
 syszip=$(stat -c %s /var/log/backup/syslog_$now.zip)
@@ -40,3 +33,6 @@ echo Syslog original vs Compressed: $sysorg / $syszip
 echo WMPT original vs Compressed: $wtmporg / $wtmpzip
 cat /dev/null > /var/log/syslog
 cat /dev/null > /var/log/wtmp
+
+# End
+
