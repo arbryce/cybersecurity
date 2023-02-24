@@ -32,5 +32,4 @@ Write-Host "Enter the password for the local user account" -ForegroundColor Cyan
 $password = Read-Host -AsSecureString
 Write-Log -message "#########"
 Write-Log -message "$env:COMPUTERNAME - Create local user account"
-Create-LocalUser
 Write-Log -message "#########"
