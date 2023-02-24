@@ -2,7 +2,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 
 $username = "NewUser" 
 $fullName = "New User" 
-$password = ConvertTo-SecureString "P@ssw0rd123" -AsPlainText -Force
+$password = ConvertTo-SecureString "Password123" -AsPlainText -Force
 $path = "C:\Users\NewUser"
 $logFile = "$path\log.csv"
 
