@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script: Ops 201 Class 11 Ops Challenge Solution
+# Script: Ops 201 Class 09 Ops Challenge Solution
 # Author: Ashley Bryce
 # Date of latest revision: 05/09/23
 # Purpose: Print a string to the terminal
