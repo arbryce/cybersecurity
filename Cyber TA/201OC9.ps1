@@ -12,7 +12,7 @@ Get-EventLog -LogName System -EntryType Error -After $Begin -Before $End > C:\Us
 Get-EventLog -LogName System -EntryType Error > C:\Users\TJVog\Documents\error.txt
 
 # Task 3
-Get-EventLog -LogName System -InstanceID 10016 > C:\Users\TJVog\Documents\InstanceID.txt
+Get-EventLog -LogName System -InstanceID 16 > C:\Users\TJVog\Documents\InstanceID.txt
 
 # Task 4
 Get-EventLog -LogName System -Newest 20 > C:\Users\TJVog\Documents\New20.txt
