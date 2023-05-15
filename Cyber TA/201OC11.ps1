@@ -1,7 +1,6 @@
 # Script: Ops 201 Class 11 Ops Challenge Solution
 # Author: Ashley Bryce
-# Date of latest revision: 05/11/23
-# Purpose: Print a string to the terminal
+# Date of latest revision: 05/15/23
 
 # Main
 
