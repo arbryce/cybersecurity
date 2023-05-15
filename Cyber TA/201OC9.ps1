@@ -1,7 +1,6 @@
 # Script: Ops 201 Class 09 Ops Challenge Solution
 # Author: Ashley Bryce
-# Date of latest revision: 12/22/23
-# Purpose: Print a string to the terminal
+# Date of latest revision: 05/15/23
 
 # Task 1: Output all events from the System event log that occurred in the last 24 hours to a file on your desktop named last_24.txt
 $Begin = Get-Date -Date '12/21/2022 00:00:00'
