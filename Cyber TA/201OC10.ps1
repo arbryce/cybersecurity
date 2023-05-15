@@ -2,30 +2,23 @@
 # Author: Ashley Bryce
 # Date of latest revision: 05/15/23
 
-# All active processes ordered by highest CPU time consumption at the top
-Task 1: 
+# Task 1: All active processes ordered by highest CPU time consumption at the top
 Get-Process | Sort-Object CPU -Descending
 
-# All active processes ordered by highest Process Identification Number at the top
-Task 2:
+# Task 2: All active processes ordered by highest Process Identification Number at the top
 Get-Process | Sort-Object Id -Descending
 
-# Top five active processes ordered by highest Working Set (WS(K)) at the top
-Task 3:
+# Task 3: Top five active processes ordered by highest Working Set (WS(K)) at the top
 Get-Process | Sort-Object WS -Descending | Select-Object -First 5
 
-# Start a browser process and have it open https://owasp.org/www-project-top-ten/
-Task 4:
+# Task 4: Start a browser process and have it open https://owasp.org/www-project-top-ten/
 Start-Process -Filepath "C:\Program Files\Internet Explorer\iexplore.exe" https://owasp.org/www-project-top-ten/
 
-# Start the process Notepad ten times using a for loop
-Task 5: 
+# Task 5: Start the process Notepad ten times using a for loop
 for ($i = 0; $i -lt 10; $i++) {Start-Process "C:\Program Files\Internet Explorer\iexplore.exe" https://owasp.org/www-project-top-ten/}
 
-# Close all instances of the Notepad
-Task 6:
+# Task 6: Close all instances of the Notepad
 get-process iexplore | stop-process
 
-# Kill a process by its Process Identification Number
-Task 7:
+# Task 7: Kill a process by its Process Identification Number
 Stop-Process -ID 1464 -Force
